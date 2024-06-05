@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator-title {
+    text-align: center;
+    color: #0047ab; /* Dark Blue */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calculator {
+    width: 300px;
+    background: linear-gradient(135deg, #f9c80e, #f86624); /* Gradient background */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    overflow: hidden;
+    transform: perspective(1000px) rotateX(10deg); /* 3D effect */
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #444;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(180deg, #f2f2f2, #ddd); /* Gradient background */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    transform: perspective(500px) rotateX(-5deg); /* 3D effect */
+}
+
+button:hover {
+    background-color: #e5e5e5;
+    transform: translate(2px, 2px) perspective(500px) rotateX(-5deg); /* Enhanced hover effect */
+}
